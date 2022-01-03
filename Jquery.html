@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Jquery</title>
+
+    <!-- adding jquery cdn Librery...... -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <p class="odd"> this is my body1</p>
+    <p id="second"> this is my body2</p>
+    <p> this is my body3</p>
+    <p> this is my body4</p>
+    <p> this is my body5</p>
+    <button id="but">toogle</button>
+    <div id="hk">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt ex nam nulla accusamus numquam explicabo amet quia ad mollitia atque eligendi iure repudiandae dolorum impedit magni quis suscipit vero sint, aspernatur neque dolore soluta.
+    </div>
+
+    <form action="">
+        <input type="text" id="hk2">
+        <textarea id='kk'>This is Your Text Area</textarea>
+    </form>
+
+</body>
+
+
+<script>
+    //This function is to avoid first element hide and your page load after this....
+    $(document).ready(function() {
+        //     // Your jquery code here.....
+
+        //     console.log($);
+        //     // $ means Jquery...
+
+        //     // syntex jquery.....
+
+        //     //  $('selector').action()
+
+        //     // $('p').click(); //click on p;
+        //     $('p').click(function() {
+        //         console.log('You clicked on p',
+        //             this);
+
+
+        //         // $('p').hide();
+
+
+        //         // if you hide which element u select then we use this keyword
+
+        //         // $(this).hide();
+
+        //         // $('#id').hide();
+        //         // $('.class').hide();
+
+        //     });
+
+
+        //     // there are three main type of selector
+        //     //         1 Element selector
+        //     //         2 class selector
+        //     //         3 class selector
+
+        //     // Element selector - this is an example of element selector
+        //     // $('p').click();
+
+        //     // id selector this is an example of id selector
+
+        //     // $('#id').click();
+
+
+
+        //     // class selector this is and example of class selector
+        //     // $('#second').click();
+        //     // $("*").click //click on all elements
+
+        //     // $('p.odd').click() // also write this clicks on all the elements....
+        //     // $('p.first').click() //click on all the elements......
+
+
+
+        // Events in Jquery
+
+        // Mouse Event = click,dbclick,mouseenter,mouseleave
+        // // KeyboardEvent=keypress,keydown documentwindow event
+        // submit change focous blur
+
+        // $('p').click();
+
+
+        // $('p').dblclick(function() {
+        //     console.log('You double  on p', this);
+        // })
+
+        // $('p').hover(function() {
+        //     console.log('You hovered on p :, this');
+        // })
+
+        // $('p').on(click, function() {
+        //         console.log('Why You click this', this);
+        //     }
+
+        // )
+        // $('#hk').hide(1000, function() {
+        //     console.log('hidden');
+        // }); also write function....
+        // $('#hk').show();
+
+        $('#but').click(function() {
+                //     $('#hk').toggle(1000);
+                // $('#hk').slideUp();
+                // $('#hk').slideDown();
+                // $('#hk').slideToggle();
+                // overwrite fadeout also use for toogle
+            })
+            // Animate function in Jquey
+
+        // $('#hk').animate({
+        //     opacity: 0.3,
+        //     height: '150px',
+        //     width: '350px'
+
+        // }, 'slow')
+        // $("#hk").animate({
+        //     opacity: 0.3
+        // }, 4000);
+        // $('#hk').animate({
+        //     opacity: 0.9
+        // }, 4000);
+        // $("hk").animate({
+        //         width: "350px"
+        //     }, 1000)
+        //     // $("#hk").stop();
+
+        // $('#KK').val();
+        // $('#kk').empty();
+        // adding class
+        // $('#hk').addClass('myclass')
+        // $('#hk').css('background-color', 'red')
+        // $('#hk').css('background-color')
+
+        // what is Ajex
+
+        // Art of Exchanging data with a server  without Reloading the page and manipulate dom
+
+        // google not allowed to exchange data from other origin
+
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+        // $.post('https://code.jquery.com/jquery-3.3.1.js',
+        //     { name: 'harry', channel: 'code with harry' },
+        //     function (data, status) { alert(status) });
+
+    });
+</script>
+
+</html>

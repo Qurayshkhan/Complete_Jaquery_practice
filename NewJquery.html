@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <p id="para">My Name is Hassan 1 </p>
+    <p class="para2">My Name is Hassan 2 </p>
+    <p>My Name is Hassan 3 </p>
+    <p>My Name is Hassan 4 </p>
+    <p>My Name is Hassan 5 </p>
+
+
+
+    <button type="submit" id="kk">Toogle</button>
+
+    <div id="hk">Hassan khan <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, perferendis. Animi pariatur deserunt veniam iusto voluptas provident voluptatem, dolorum asperiores assumenda quas itaque reiciendis consectetur tempora ab laboriosam
+        eum repellat perferendis vitae fuga. Magnam necessitatibus illo aut nam atque quod rerum pariatur hic debitis laborum, soluta fugit eius sint at eligendi explicabo voluptatibus asperiores beatae ipsam placeat aliquam. Tempora amet voluptates recusandae
+        perferendis blanditiis officia natus, ut exercitationem voluptatem eligendi?</div>
+
+
+
+    <input type="text" id="inp">
+
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+
+</body>
+
+
+<script>
+    $(document).ready(function() {
+
+
+        //code start here 
+
+        // console.log($); //check for Error
+
+        // syntax
+
+        // $('selector').action();
+
+
+        // $('p').click(); //click on p
+        $('p').click(function() {
+
+            // console.log('You clicked on p');
+
+
+            $(this).hide('p');
+            //for Hide content.....
+
+
+
+        });
+
+        // There are Three Types of Selectors
+
+        // Element selector
+
+
+        // $('p').click(); this is an example of Element selector
+
+
+
+
+        // id selector
+
+        $('#para').click(function() {
+            // console.log("You click on p", this)
+        });
+
+
+
+
+        // class selector
+
+
+        $('.para2').click(function() {
+            // console.log("You click on this p", this)
+        })
+
+        // universal element selector
+
+
+        // $('*').click();
+        // $('p.para2').click();
+
+
+
+        // Events in Jquery
+
+        // Events in jQuery
+        // Mouse events = click, dblclick, mouseenter, mouseleave
+        // KeyboardEvent = keypress, keydown, MediaKeyStatusMap
+        // form events = submit, change, focus, blur
+        // document/window events = load, resize, scroll, unload
+
+        //for Double click
+
+        $('p').dblclick(function() {
+            // console.log("You dobble click on p", this)
+        });
+        //for enter Mouse
+
+
+        $('p').mouseenter(function() {
+            // console.log("You Entered");
+        });
+        //for leave
+
+        $('p').mouseleave(function() {
+            // console.log('You leave');
+        });
+
+
+        //on method
+
+        $('p').on({
+            click: function() {
+                console.log('thanks for coming')
+            },
+            mouseleave: function() {
+                console.log('you leave')
+            }
+        })
+
+
+
+        // $('#hk').hide(1000, function() {
+        //     console.log('hidden');
+        // });
+
+        // $('#hk').show(1000, function() {
+        //     console.log('Show');
+        // })
+
+
+
+        // $('#kk').click(function() {
+        //     $('#hk').toggle(1000);
+        // })
+
+
+        // fadeout();
+        // fadeto();
+        // fadetoggle();
+
+        // Slides Methods Speed and parameters are optional
+
+
+        // $('#hk').slideUp(1000, function() {
+        //     console.log('DONE')
+        // });
+
+
+
+        // $('#hk').slideDown(1000);
+
+
+        // $('#hk').toggle(1000);
+
+
+        // Animate Jquery
+
+
+
+
+        // $('#hk').animate({
+        //     opacity: 0.3,
+        //     height: '150px',
+        //     width: '350px',
+        // }, 2000)
+
+        // also write slow fast expect of number
+
+        // Also write this syntex
+
+        // $('#hk').animate({
+        //     opacity: 0.3
+        // }, 2000);
+        // $('#hk').animate({
+        //     height: '300px'
+        // }, 4000);
+        // $('#hk').animate({
+        //     width: '150px'
+        // }, 2000);
+
+        // use if you stop Animation
+
+        // $('#hk').stop();
+
+
+
+        // How To Use JQuery With JavaScript
+
+
+        // $('body').html();  //show All the Html....
+
+        //$('body').html('My Name is Hassan ')  //it is use when You change your Html....
+
+
+        //$('#inp').val('enter Value here');
+
+
+
+        // $('#text').val('Here Enter Your Text ')
+
+
+
+        // .empty();
+        // .remove();
+        // .text();
+
+
+
+        // how To add class
+
+
+        $('#hk').addClass('myclass');
+
+
+
+
+
+        // how to set css
+
+
+
+        // $('#hk').css('background', 'red');
+
+
+        // how check value of css
+
+
+        // $('#hk').css('background-color');
+
+
+        // "rgb(255, 0, 0)"
+
+
+        // AJAX Using jQuery
+
+
+
+        // Art of Exchanging data with a server  without Reloading the page and manipulate dom
+
+        // google not allowed to exchange data from other origin
+
+
+
+
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(data); })
+
+        // $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) { alert(status); })
+
+        // $.post('https://code.jquery.com/jquery-3.3.1.js',
+        //     { name: 'harry', channel: 'code with harry' },
+        //     function (data, status) { alert(status) });
+
+
+    });
+</script>
+
+</html>
